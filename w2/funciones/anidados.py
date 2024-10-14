@@ -1,8 +1,20 @@
-def saludar(nombre, apellido):
-    def generar_nombre(nombre, apellido):
-        return f"{nombre} {apellido}"
+# Ejemplo de funciones anidadas
+def operacion(a, b):
+    def suma():
+        return a + b
 
-    print("Hola:", generar_nombre(nombre, apellido))
+    def resta():
+        return a - b
+
+    def multiplicacion():
+        return a * b
+
+    def division():
+        return a / b
+
+    return suma(), resta(), multiplicacion(), division()
 
 
-saludar("Jose", "Aguilar")
+# Ejecutar la función
+print(operacion(10, 5))
+# (15, 5, 50, 2.0)

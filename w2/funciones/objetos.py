@@ -1,20 +1,29 @@
-def duplicar(a):
-    return a * 2
+# Es posible que las funciones se comporten como objetos, es decir,
+# que puedan ser asignadas a variables.
+def saludar(persona):
+    print("Hola", persona)
 
 
-# Asignar duplicar a un objeto
-f = duplicar
-
-print(f(3))
+f = saludar
+f("Jose")
 
 
-def aumentar(inicial, aumento):
-    return inicial + aumento
+# En Python, las funciones son objetos de primera clase, lo que significa
+# que pueden ser asignadas a variables, pasadas como argumentos a otras
+# funciones y devueltas como valores de otras funciones.
+# Ejemplo de funcion como argumento
+def sumar(a, b):
+    return a + b
 
 
-def componer(f1, f2, entrada1, entrada2):
-    return f1(f2(entrada1, entrada2))
+def duplicar(numero):
+    return numero * 2
 
 
-resultado = componer(duplicar, aumentar, 40, 6)
-print(resultado)
+# Funcion que permite usar dos funciones como argumentos
+def componer(f, g, arg1, arg2):
+    return f(g(arg1, arg2))
+
+
+print(componer(duplicar, sumar, 10, 20))
+# Salida: 60
