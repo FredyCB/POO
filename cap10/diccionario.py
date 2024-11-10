@@ -3,7 +3,7 @@
 
 from pprint import pprint
 
-'''
+"""
 {
     clave1: valor1,  <-- elemento
     clave2: valor2,  <-- elemento
@@ -11,7 +11,7 @@ from pprint import pprint
 
 claves son unicas, son inmutables
 valor no tienen restricciones
-'''
+"""
 
 paises = {}
 paises = dict()
@@ -27,12 +27,12 @@ paises = {
         "idioma": "es",
         "capital": "San Salvador",
         "nombre": "El Salvador",
-    }
+    },
 }
 
-#eliminado = paises.pop("HN")
-#pprint(eliminado)
-#del paises["ES"]
+# eliminado = paises.pop("HN")
+# pprint(eliminado)
+# del paises["ES"]
 
 # Agregar un elemento al diccionario
 paises["MX"] = {

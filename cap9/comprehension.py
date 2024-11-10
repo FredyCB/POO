@@ -8,6 +8,6 @@ print(lista)
 
 # comprehension [valor for valor in iterable if filtro]
 print("Por comprehension")
-pares = tuple(numero**2 for numero in range(2, 21, 2) if numero**2 >= 100)
+pares = [numero**2 for numero in range(2, 21, 2) if numero**2 >= 100]
 print(pares)
 

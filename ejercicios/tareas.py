@@ -77,7 +77,7 @@ def completar(tareas: list):
 
         if posicion < 0:
             raise IndexError
-        
+
         # En este punto deberiamos de tener el titulo de la tarea a completar
         titulo_a_completar = encontrados[posicion]
 

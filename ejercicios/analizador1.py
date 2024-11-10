@@ -15,7 +15,6 @@ with open("data.json") as archivo:
         # Conocer el precio
         data = dic["data"]
 
-
         if data is None:
             continue
 
