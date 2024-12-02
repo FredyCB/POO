@@ -1,10 +1,10 @@
-import http.server
+from http.server import SimpleHTTPRequestHandler
 import socketserver
 
 PORT = 3000
 
 
-class Server(http.server.SimpleHTTPRequestHandler):
+class Server(SimpleHTTPRequestHandler):
     def do_GET(self):
         # Serve files from the current directory
         super().do_GET()

@@ -5,8 +5,7 @@ import requests
 recurso_url = 'http://data.pr4e.org/romeo.txt'
 response = requests.get(recurso_url)
 if response.status_code == 200:
-    for linea in response.text.splitlines():
-        print(linea.strip())
+    print(response.text)
 else:
     print(f"Error fetching the resource: {response.status_code}")
 

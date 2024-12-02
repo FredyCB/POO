@@ -39,9 +39,8 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-url = input("Introduzca URL: ")
-html = urllib.request.urlopen(url, context=ctx).read()
+html = urllib.request.urlopen("https://www.unah.edu.hn/", context=ctx).read()
 
 
 sopa = BeautifulSoup(html, "html.parser")
-buscar_banner(sopa)
+buscar_imagenes(sopa)
